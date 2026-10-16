@@ -1,0 +1,29 @@
+@import 'tailwindcss';
+
+@theme {
+  --color-bg: #0b0b10;
+  --color-panel: #15151d;
+  --color-edge: #262633;
+  --color-muted: #8b8ba0;
+  --color-accent: #a78bfa;
+  --color-tx: #f59e0b;
+  --color-rx: #34d399;
+  --font-mono: ui-monospace, 'JetBrains Mono', 'SFMono-Regular', Menlo, monospace;
+}
+
+html,
+body {
+  background: var(--color-bg);
+  color: #e7e7ef;
+  color-scheme: dark;
+  -webkit-tap-highlight-color: transparent;
+}
+
+input[type='range'] {
+  accent-color: var(--color-accent);
+}
+
+@keyframes pax-pulse {
+  0%, 100% { background: var(--c1); }
+  50% { background: var(--c2); }
+}
